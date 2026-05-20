@@ -13,6 +13,7 @@ The course pairs theoretical PDF lectures with practical Jupyter notebooks. Note
 | 2   | `lectures/2-1951-1969.pdf`                                           | Hebb, Rosenblatt's perceptron, the AI winter        |
 | 3   | `lectures/3-architecture-and-training.pdf`                           | Multi-layer networks                                |
 | 4   | `lectures/4-1847-1960-GD+SGD.pdf`                                    | Gradient descent and SGD                            |
+| 9   | `lectures/9-1989-cnn.pdf`                                            | Convolutional neural networks, LeNet                |
 | x   | `lectures/x-1986-2015-adam.pdf`                                      | Backpropagation, momentum, Adam                     |
 
 ## Running the notebooks
@@ -23,7 +24,7 @@ The course pairs theoretical PDF lectures with practical Jupyter notebooks. Note
 2. `File → Upload notebook` and select the `.ipynb` file from the `notebooks/` folder.
 3. `Runtime → Run all`.
 
-No installation needed — Colab ships with `torch`, `numpy`, and `matplotlib`.
+No installation needed — Colab ships with `torch`, `torchvision`, `numpy`, and `matplotlib`.
 
 ### Locally with [uv](https://docs.astral.sh/uv/)
 
@@ -37,7 +38,7 @@ uv run jupyter lab
 ```bash
 python -m venv .venv
 source .venv/bin/activate
-pip install torch numpy matplotlib jupyter ipykernel
+pip install torch torchvision numpy matplotlib jupyter ipykernel
 jupyter lab
 ```
 
